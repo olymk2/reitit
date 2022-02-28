@@ -74,6 +74,7 @@
                                        :description "Description for X parameter"
                                        :json-schema/default 42}
                                       int?]
+                                     [:month [:enum :january :feburary]]
                                      [:y int?]]}
                  :responses {200 {:body [:map [:total int?]]}}
                  :handler (fn [{{{:keys [x y]} :body} :parameters}]
