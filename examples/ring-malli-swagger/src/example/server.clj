@@ -75,6 +75,7 @@
                                        :json-schema/default 42}
                                       int?]
                                      [:month [:enum :january :feburary]]
+                                     [:example :keyword]
                                      [:y int?]]}
                  :responses {200 {:body [:map [:total int?]]}}
                  :handler (fn [{{{:keys [x y]} :body} :parameters}]
